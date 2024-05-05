@@ -49,7 +49,7 @@ function Cells({ onoff, number }) {
       {loop.map((item, idx) => (
         <span
           key={idx}
-          className={`${item ? "bg-white" : "bg-none"} ${
+          className={`${item ? "bg-yellow-400" : "bg-none"} ${
             binary[idx] === "1" ? "bg-opacity-100" : "bg-opacity-20"
           } size-5 rounded-xl`}
         />
