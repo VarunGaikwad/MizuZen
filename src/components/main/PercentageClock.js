@@ -2,8 +2,8 @@
 
 import React, { useState, useEffect, useMemo } from "react";
 
-export default function Clock() {
-  const arugments = useMemo(() => [8, 30, 16, 30], []),
+export default function PercentageClock() {
+  const arugments = useMemo(() => [10, 0, 19, 30], []),
     [progress, setProgress] = useState(calculatePercentage(arugments));
 
   useEffect(() => {

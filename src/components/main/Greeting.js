@@ -12,5 +12,9 @@ export default function Greeting() {
   else if (time < 20) GreetingOfTime = "Good evening 🌆";
   else GreetingOfTime = "Good night 🌙";
 
-  return <p className="text-5xl">{GreetingOfTime}, Varun Gaikwad</p>;
+  return (
+    <p className="text-5xl">
+      {GreetingOfTime}, Varun <q>PreApeXis</q> Gaikwad
+    </p>
+  );
 }
