@@ -1,65 +1,48 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 
 export default function Clock() {
-  const [binaryTime, setBinaryTime] = useState({
-    hours: "00",
-    minutes: "00",
-    seconds: "00",
-  });
+  const arugments = useMemo(() => [8, 30, 16, 30], []),
+    [progress, setProgress] = useState(calculatePercentage(arugments));
 
   useEffect(() => {
-    const interval = setInterval(function () {
-      const [hours, minutes, seconds] = new Date()
-        .toTimeString()
-        .slice(0, 8)
-        .split(":");
-      setBinaryTime({ hours, minutes, seconds });
-    }, 1000);
-
-    return () => clearInterval(interval);
-  }, []);
+    setProgress(calculatePercentage(arugments));
+  }, [arugments]);
 
   return (
-    <div className="flex flex-row gap-10">
-      <BinarySection time={binaryTime.hours} first={2} second={4} />
-      <BinarySection time={binaryTime.minutes} first={3} second={4} />
-      <BinarySection time={binaryTime.seconds} first={3} second={4} />
+    <div className="text-5xl">
+      <span className="text-9xl">{progress}</span> <span>%</span>
     </div>
   );
 }
 
-function BinarySection({ time, first, second }) {
-  const [one, two] = time.split("");
-  return (
-    <div className="flex gap-5">
-      <Cells onoff={one} number={first} />
-      <Cells onoff={two} number={second} />
-    </div>
-  );
+function calculatePercentage([startHour, startMin, endHour, endMin]) {
+  const currentDate = new Date(),
+    [
+      startHourInSeconds,
+      startMinutesInSeconds,
+      endHourInSeconds,
+      endMinutesInSeconds,
+      currentHourInSeconds,
+      currentMinutesInSeconds,
+    ] = [
+      startHour * 3600,
+      startMin * 60,
+      endHour * 3600,
+      endMin * 60,
+      currentDate.getHours() * 3600,
+      currentDate.getMinutes() * 60,
+    ],
+    totalSeconds =
+      endHourInSeconds +
+      endMinutesInSeconds -
+      (startHourInSeconds + startMinutesInSeconds),
+    secondsSinceStart =
+      currentHourInSeconds +
+      currentMinutesInSeconds -
+      (startHourInSeconds + startMinutesInSeconds),
+    progress = (secondsSinceStart / totalSeconds) * 100;
+
+  return Math.floor(progress);
 }
-
-function Cells({ onoff, number }) {
-  const loop = [...Array(4 - number).fill(0), ...Array(number).fill(1)],
-    binary = onoff.toBinary();
-
-  return (
-    <div className="flex flex-col gap-5">
-      {loop.map((item, idx) => (
-        <span
-          key={idx}
-          className={`${item ? "bg-yellow-400" : "bg-none"} ${
-            binary[idx] === "1" ? "bg-opacity-100" : "bg-opacity-20"
-          } size-5 rounded-xl`}
-        />
-      ))}
-    </div>
-  );
-}
-
-String.prototype.toBinary = function () {
-  return Number(this >>> 0)
-    .toString(2)
-    .padStart(4, "0");
-};
