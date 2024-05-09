@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Mizuzen",
+  "version": "1.1",
+  "description": "Your homepage",
+  "permissions": [
+    "tabs",
+    "storage",
+    "activeTab"
+  ],
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "icons": {
+    "16": "favicon_16.png",
+    "32": "favicon_32.png",
+    "192": "favicon_192.png",
+    "152": "favicon_152.png"
+  }
+}
