@@ -13,7 +13,10 @@ export default function DuckDuckGoSearchBar() {
   };
 
   return (
-    <form onSubmit={onSearchSubmit} className="flex w-full lg:w-1/2">
+    <form
+      onSubmit={onSearchSubmit}
+      className="flex items-center w-full lg:w-1/2"
+    >
       <Image
         className="size-10 mx-2"
         src={duckduckgo}
@@ -27,7 +30,7 @@ export default function DuckDuckGoSearchBar() {
         placeholder="Search"
         id="searchInput"
         name="search"
-        className="px-4 w-full bg-stone-950 bg-opacity-25 outline-none rounded-xl"
+        className="p-3 w-full bg-stone-950 bg-opacity-25 outline-none rounded-xl"
       />
     </form>
   );

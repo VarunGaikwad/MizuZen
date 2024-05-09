@@ -8,7 +8,7 @@ export default function Credits({ credits }) {
 
   return (
     <div
-      className="text-xs"
+      className="text-xs w-1/6"
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >

@@ -7,7 +7,7 @@ export default function FooterToolbar({ credits }) {
     <div className="flex justify-between items-center">
       <Credits credits={credits} />
       <Quotes />
-      <div />
+      <div className="w-1/6" />
     </div>
   );
 }

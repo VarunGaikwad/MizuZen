@@ -9,6 +9,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-q {
-  font: Georgia, serif;
+.text-xxs {
+  font-size: 0.375rem;
+  line-height: .5rem;
 }

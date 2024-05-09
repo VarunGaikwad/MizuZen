@@ -3,16 +3,24 @@
 import React, { useState, useEffect, useMemo } from "react";
 
 export default function PercentageClock() {
-  const arugments = useMemo(() => [10, 0, 19, 30], []),
+  const arugments = useMemo(() => [9, 0, 17, 0], []),
     [progress, setProgress] = useState(calculatePercentage(arugments));
 
   useEffect(() => {
-    setProgress(calculatePercentage(arugments));
+    const interval = setInterval(
+      () => setProgress(calculatePercentage(arugments)),
+      1000
+    );
+
+    return () => {
+      clearInterval(interval);
+    };
   }, [arugments]);
 
   return (
     <div className="text-5xl">
-      <span className="text-9xl">{progress}</span> <span>%</span>
+      <span className="text-9xl">{progress}</span>
+      <span>%</span>
     </div>
   );
 }
@@ -42,7 +50,8 @@ function calculatePercentage([startHour, startMin, endHour, endMin]) {
       currentHourInSeconds +
       currentMinutesInSeconds -
       (startHourInSeconds + startMinutesInSeconds),
-    progress = (secondsSinceStart / totalSeconds) * 100;
+    progress = (secondsSinceStart / totalSeconds) * 100,
+    result = Math.floor(progress);
 
-  return Math.floor(progress);
+  return result > 100 ? `+${result - 100}` : result;
 }
