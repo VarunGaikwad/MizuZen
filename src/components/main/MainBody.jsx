@@ -1,7 +1,5 @@
-import BinaryClock from "./BinaryClock";
-import PercentageClock from "./PercentageClock";
 import Greeting from "./Greeting";
-import DuckDuckGoSearchBar from "../header/DuckDuckGoSearchBar";
+import PercentageClock from "./PercentageClock";
 
 export default function MainBody() {
   return (

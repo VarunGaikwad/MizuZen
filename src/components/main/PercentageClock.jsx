@@ -1,9 +1,7 @@
-"use client";
-
-import React, { useState, useEffect, useMemo } from "react";
+import { useState, useEffect, useMemo } from "react";
 
 export default function PercentageClock() {
-  const arugments = useMemo(() => [9, 0, 17, 0], []),
+  const arugments = useMemo(() => [10, 30, 19, 30], []),
     [progress, setProgress] = useState(calculatePercentage(arugments));
 
   useEffect(() => {

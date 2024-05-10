@@ -1,7 +1,8 @@
-const { default: axios } = require("axios");
+import axios from "axios";
+
 let locationMemory = {};
 
-const { GEO_BASE_URL, GEO_API_KEY } = process.env,
+const { GEO_BASE_URL, GEO_API_KEY } = import.meta.env,
   getGeolocation = async () => {
     if (locationMemory.length) {
       return locationMemory;

@@ -1,4 +1,3 @@
-import React from "react";
 import FavIcon from "./FavIcon";
 
 export default function ImportantLinks() {

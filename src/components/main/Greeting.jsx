@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Greeting() {
   const time = new Date().getHours();
 

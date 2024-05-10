@@ -1,11 +1,10 @@
-import FooterToolbar from "@/components/footer/FooterToolbar";
-import HeaderToolbar from "@/components/header/HeaderToolbar";
-import MainBody from "@/components/main/MainBody";
-import getRandomUnsplashBackground from "@/external_call/background";
+import FooterToolbar from "./components/footer/FooterToolbar";
+import HeaderToolbar from "./components/header/HeaderToolbar";
+import MainBody from "./components/main/MainBody";
+import getRandomUnsplashBackground from "./external_call/background";
 
-export default async function Home() {
-  const { urls, credits } = await getRandomUnsplashBackground();
-
+export default function App() {
+  const { urls, credits } = getRandomUnsplashBackground();
   return (
     <main
       className="bg-center bg-no-repeat bg-fixed bg-cover"

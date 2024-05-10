@@ -1,5 +1,4 @@
-import React from "react";
-import quotes from "@/external_call/quotes.json";
+import quotes from "../../external_call/quotes.json";
 
 export default function Quotes() {
   const index = new Date().toISOString().slice(0, 10).replace(/-/g, "") % 30;

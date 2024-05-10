@@ -1,8 +1,4 @@
-"use client";
-
-import Image from "next/image";
-import Link from "next/link";
-import React, { useState } from "react";
+import { useState } from "react";
 
 export default function FavIcon({ name, url }) {
   const defaultImage =
@@ -11,9 +7,9 @@ export default function FavIcon({ name, url }) {
       `https://www.google.com/s2/favicons?sz=128&domain=${url}`
     );
   return (
-    <Link href={url}>
+    <a href={url}>
       <div className="w-24 flex flex-col align-middle items-center justify-center text-center gap-2">
-        <Image
+        <img
           width={32}
           height={32}
           src={srcImg}
@@ -24,6 +20,6 @@ export default function FavIcon({ name, url }) {
         />
         <p className="text-xs">{name}</p>
       </div>
-    </Link>
+    </a>
   );
 }

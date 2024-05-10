@@ -1,7 +1,17 @@
-"use client";
+import { useState } from "react";
+import PropTypes from "prop-types";
 
-import Link from "next/link";
-import React, { useState } from "react";
+Credits.propTypes = {
+  credits: PropTypes.shape({
+    location: PropTypes.shape({
+      city: PropTypes.string,
+      country: PropTypes.string,
+    }),
+    user: PropTypes.shape({
+      name: PropTypes.string,
+    }),
+  }).isRequired,
+};
 
 export default function Credits({ credits }) {
   const [isHover, setHover] = useState(false);
@@ -19,7 +29,7 @@ export default function Credits({ credits }) {
       >
         {credits.location.city}, {credits.location.country}
       </p>
-      <Link
+      <a
         href={`https://unsplash.com/photos/${credits.id}`}
         target="_blank"
         className={`${
@@ -27,7 +37,7 @@ export default function Credits({ credits }) {
         } transition-all duration-700`}
       >
         {credits?.user.name} / Unsplash
-      </Link>
+      </a>
     </div>
   );
 }

@@ -1,8 +1,4 @@
-"use client";
-
-import React from "react";
-import duckduckgo from "@/assets/duckduckgo.svg";
-import Image from "next/image";
+import duckduckgo from "../../assets/duckduckgo.svg";
 
 export default function DuckDuckGoSearchBar() {
   const onSearchSubmit = (event) => {
@@ -17,7 +13,7 @@ export default function DuckDuckGoSearchBar() {
       onSubmit={onSearchSubmit}
       className="flex items-center w-full lg:w-1/2"
     >
-      <Image
+      <img
         className="size-10 mx-2"
         src={duckduckgo}
         height={1}

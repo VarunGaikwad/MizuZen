@@ -1,6 +1,18 @@
-import React from "react";
 import Credits from "./Credits";
 import Quotes from "./Quotes";
+import PropTypes from "prop-types";
+
+FooterToolbar.propTypes = {
+  credits: PropTypes.shape({
+    location: PropTypes.shape({
+      city: PropTypes.string,
+      country: PropTypes.string,
+    }),
+    user: PropTypes.shape({
+      name: PropTypes.string,
+    }),
+  }).isRequired,
+};
 
 export default function FooterToolbar({ credits }) {
   return (

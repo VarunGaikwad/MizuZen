@@ -1,6 +1,5 @@
-"use client";
-
 import { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 
 export default function BinaryClock() {
   const [binaryTime, setBinaryTime] = useState({
@@ -30,6 +29,12 @@ export default function BinaryClock() {
   );
 }
 
+BinarySection.propTypes = {
+  time: PropTypes.string,
+  first: PropTypes.number,
+  second: PropTypes.number,
+};
+
 function BinarySection({ time, first, second }) {
   const [one, two] = time.split("");
   return (
@@ -39,6 +44,11 @@ function BinarySection({ time, first, second }) {
     </div>
   );
 }
+
+Cells.propTypes = {
+  onoff: PropTypes.string,
+  number: PropTypes.string,
+};
 
 function Cells({ onoff, number }) {
   const loop = [...Array(4 - number).fill(0), ...Array(number).fill(1)],
