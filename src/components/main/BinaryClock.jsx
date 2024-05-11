@@ -1,27 +1,19 @@
-import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
-export default function BinaryClock() {
-  const [binaryTime, setBinaryTime] = useState({
-    hours: "00",
-    minutes: "00",
-    seconds: "00",
-  });
-
-  useEffect(() => {
-    const interval = setInterval(function () {
-      const [hours, minutes, seconds] = new Date()
-        .toTimeString()
-        .slice(0, 8)
-        .split(":");
-      setBinaryTime({ hours, minutes, seconds });
-    }, 1000);
-
-    return () => clearInterval(interval);
-  }, []);
+BinaryClock.propTypes = {
+  className: PropTypes.string,
+  date: PropTypes.object,
+};
+export default function BinaryClock({ className, date }) {
+  const [hours, minutes, seconds] = date.toTimeString().slice(0, 8).split(":"),
+    binaryTime = {
+      hours,
+      minutes,
+      seconds,
+    };
 
   return (
-    <div className="flex flex-row gap-10">
+    <div className={`flex flex-row gap-10 ${className}`}>
       <BinarySection time={binaryTime.hours} first={2} second={4} />
       <BinarySection time={binaryTime.minutes} first={3} second={4} />
       <BinarySection time={binaryTime.seconds} first={3} second={4} />

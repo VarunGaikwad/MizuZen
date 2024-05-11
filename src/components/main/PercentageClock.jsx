@@ -1,31 +1,28 @@
-import { useState, useEffect, useMemo } from "react";
+import { useState } from "react";
+import PropTypes from "prop-types";
 
-export default function PercentageClock() {
-  const arugments = useMemo(() => [10, 30, 19, 30], []),
-    [progress, setProgress] = useState(calculatePercentage(arugments));
+PercentageClock.propTypes = {
+  className: PropTypes.string,
+  date: PropTypes.object,
+};
 
-  useEffect(() => {
-    const interval = setInterval(
-      () => setProgress(calculatePercentage(arugments)),
-      1000
-    );
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, [arugments]);
+export default function PercentageClock({ className, date }) {
+  const arugments = [10, 30, 19, 30],
+    progress = useState(calculatePercentage(arugments, date));
 
   return (
-    <div className="text-5xl">
+    <div className={`text-5xl ${className}`}>
       <span className="text-9xl">{progress}</span>
       <span>%</span>
     </div>
   );
 }
 
-function calculatePercentage([startHour, startMin, endHour, endMin]) {
-  const currentDate = new Date(),
-    [
+function calculatePercentage(
+  [startHour, startMin, endHour, endMin],
+  currentDate
+) {
+  const [
       startHourInSeconds,
       startMinutesInSeconds,
       endHourInSeconds,

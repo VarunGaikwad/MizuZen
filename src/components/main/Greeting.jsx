@@ -1,18 +1,24 @@
-export default function Greeting() {
-  const time = new Date().getHours();
+import PropTypes from "prop-types";
 
-  let GreetingOfTime = "";
+Greeting.propTypes = {
+  date: PropTypes.object,
+};
 
-  if (time < 12) GreetingOfTime = "Good morning ☀️";
-  else if (time === 12) GreetingOfTime = "Lunchtime! 🍽️";
-  else if (time === 13) GreetingOfTime = "Snack time! 🍪";
-  else if (time < 17) GreetingOfTime = "Good afternoon 🌤️";
-  else if (time < 20) GreetingOfTime = "Good evening 🌆";
-  else GreetingOfTime = "Good night 🌙";
+export default function Greeting({ date }) {
+  const time = date.getHours();
+
+  let greetingOfTime = "";
+
+  if (time < 12) greetingOfTime = "Good morning 🌄";
+  else if (time < 13) greetingOfTime = "Lunchtime! 🍜";
+  else if (time < 17) greetingOfTime = "Good afternoon 🌤️";
+  else if (time < 18) greetingOfTime = "Snack time! 🍪";
+  else if (time < 20) greetingOfTime = "Dinner time! 🍝";
+  else greetingOfTime = "Good night 🌃";
 
   return (
     <p className="text-5xl">
-      {GreetingOfTime}, Varun <q>PreApeXis</q> Gaikwad
+      {greetingOfTime}, Varun <q>PreApeXis</q> Gaikwad
     </p>
   );
 }
