@@ -26,6 +26,14 @@ export default function ImportantLinks() {
       name: "SAP BAS",
       url: "https://9b64d66ctrial.us10.build.cloud.sap/lobby",
     },
+    {
+      name: "Gmail",
+      url: "https://mail.google.com/mail/u/0/#inbox",
+    },
+    {
+      name: "Chess.com",
+      url: "https://www.chess.com/",
+    },
   ];
   return (
     <div className="absolute mt-10 w-3/12 flex flex-wrap gap-4">
