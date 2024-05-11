@@ -13,7 +13,7 @@ export default function BinaryClock({ className, date }) {
     };
 
   return (
-    <div className={`flex flex-row gap-10 ${className}`}>
+    <div className={`flex gap-10 ${className}`}>
       <BinarySection time={binaryTime.hours} first={2} second={4} />
       <BinarySection time={binaryTime.minutes} first={3} second={4} />
       <BinarySection time={binaryTime.seconds} first={3} second={4} />

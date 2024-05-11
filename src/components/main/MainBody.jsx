@@ -20,23 +20,22 @@ export default function MainBody() {
   return (
     <div className="flex-1 flex flex-col gap-4 justify-center items-center">
       <div className="flex items-center">
-        {activeClock === "Percentage" ? (
-          <PercentageClock
-            date={date}
-            className={
-              activeClock === "Percentage" ? "clock fade-in" : "clock fade-out"
-            }
-          />
-        ) : (
+        <div></div>
+        <div className="flex-1 flex flex-col items-center">
           <BinaryClock
             date={date}
-            className={
-              activeClock === "Binary" ? "clock fade-in" : "clock fade-out"
-            }
+            className={`${
+              activeClock === "Binary" ? "opacity-100" : "opacity-0"
+            } transition-opacity duration-1000 translate-y-32`}
           />
-        )}
+          <PercentageClock
+            date={date}
+            className={`${
+              activeClock === "Percentage" ? "opacity-100" : "opacity-0"
+            } transition-opacity duration-1000`}
+          />
+        </div>
         <button
-          className="ml-20"
           onClick={() =>
             setActiveClock((prev) => {
               if (prev === "Percentage") {
