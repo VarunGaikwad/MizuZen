@@ -8,9 +8,6 @@
     "storage",
     "activeTab"
   ],
-  "web_accessible_resources": [
-    "favicon.ico"
-  ],
   "chrome_url_overrides": {
     "newtab": "index.html"
   },
