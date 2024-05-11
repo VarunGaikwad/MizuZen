@@ -34,6 +34,10 @@ export default function ImportantLinks() {
       name: "Chess.com",
       url: "https://www.chess.com/",
     },
+    {
+      name: "Duolingo",
+      url: "https://www.duolingo.com/characters",
+    },
   ];
   return (
     <div className="absolute mt-10 w-3/12 flex flex-wrap gap-4">
