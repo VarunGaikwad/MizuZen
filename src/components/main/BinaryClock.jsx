@@ -39,7 +39,7 @@ function BinarySection({ time, first, second }) {
 
 Cells.propTypes = {
   onoff: PropTypes.string,
-  number: PropTypes.string,
+  number: PropTypes.number,
 };
 
 function Cells({ onoff, number }) {

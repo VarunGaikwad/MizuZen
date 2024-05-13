@@ -9,12 +9,12 @@ export default function Greeting({ date }) {
 
   let greetingOfTime = "";
 
-  if (time < 12) greetingOfTime = "Good morning 🌄";
-  else if (time < 13) greetingOfTime = "Lunchtime! 🍜";
-  else if (time < 17) greetingOfTime = "Good afternoon 🌤️";
-  else if (time < 18) greetingOfTime = "Snack time! 🍪";
-  else if (time < 20) greetingOfTime = "Dinner time! 🍝";
-  else greetingOfTime = "Good night 🌃";
+  if (time < 12) greetingOfTime = "おはようございます 🌄";
+  else if (time < 13) greetingOfTime = "昼ごはんの時間です！🍜";
+  else if (time < 17) greetingOfTime = "こんにちは 🌤️";
+  else if (time < 18) greetingOfTime = "おやつの時間です！🍪";
+  else if (time < 20) greetingOfTime = "夕食の時間です！🍝";
+  else greetingOfTime = "おやすみなさい 🌃";
 
   return (
     <p className="text-5xl">

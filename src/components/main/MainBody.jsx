@@ -19,21 +19,27 @@ export default function MainBody() {
 
   return (
     <div className="flex-1 flex flex-col gap-4 justify-center items-center">
-      <div className="flex items-center">
+      <div className="flex items-center gap-10">
         <div></div>
         <div className="flex-1 flex flex-col items-center">
-          <BinaryClock
-            date={date}
-            className={`${
-              activeClock === "Binary" ? "opacity-100" : "opacity-0"
-            } transition-opacity duration-1000 translate-y-32`}
-          />
-          <PercentageClock
-            date={date}
-            className={`${
-              activeClock === "Percentage" ? "opacity-100" : "opacity-0"
-            } transition-opacity duration-1000`}
-          />
+          <div
+            className={`absolute z-10 transition-opacity duration-1000 ${
+              activeClock === "Percentage"
+                ? "opacity-100 ease-in"
+                : "opacity-0 ease-out"
+            }`}
+          >
+            <PercentageClock date={date} />
+          </div>
+          <div
+            className={`transition-opacity duration-1000 ${
+              activeClock === "Binary"
+                ? "opacity-100 ease-in"
+                : "opacity-0 ease-out"
+            }`}
+          >
+            <BinaryClock date={date} />
+          </div>
         </div>
         <button
           onClick={() =>

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import PropTypes from "prop-types";
 
 PercentageClock.propTypes = {
@@ -8,7 +7,7 @@ PercentageClock.propTypes = {
 
 export default function PercentageClock({ className, date }) {
   const arugments = [10, 30, 19, 30],
-    progress = useState(calculatePercentage(arugments, date));
+    progress = calculatePercentage(arugments, date);
 
   return (
     <div className={`text-5xl ${className}`}>

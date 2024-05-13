@@ -4,7 +4,7 @@ const getRandomUnsplashBackground = () => {
   const random = Number(
     new Date().toISOString().split("T")[0].replace(/-/g, "")
   );
-  return background.at(random % 10);
+  return background.at(random % background.length);
 };
 
 export default getRandomUnsplashBackground;
