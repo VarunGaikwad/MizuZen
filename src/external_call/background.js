@@ -1,6 +1,6 @@
 import background from "./background.json";
 
-let max = background.length,
+let max = background.length - 1,
   random = Number(new Date().getTime()) % max;
 
 const getRandomUnsplashBackground = () => {
