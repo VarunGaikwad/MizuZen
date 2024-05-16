@@ -1,10 +1,18 @@
 import background from "./background.json";
 
+let max = background.length,
+  random = Number(new Date().getTime()) % max;
+
 const getRandomUnsplashBackground = () => {
-  const random = Number(
-    new Date().toISOString().split("T")[0].replace(/-/g, "")
-  );
-  return background.at(random % background.length);
+  return background.at(getNextIndex());
+};
+
+const getNextIndex = () => {
+  random++;
+  if (random > max) {
+    random = 0;
+  }
+  return random;
 };
 
 export default getRandomUnsplashBackground;
