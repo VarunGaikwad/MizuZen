@@ -42,5 +42,9 @@
     {
         "name": "LinkedIn",
         "url": "https://www.linkedin.com/in/varun-gaikwad/"
+    },
+    {
+        "name": "SolDev",
+        "link": "https://www.soldev.app/course"
     }
 ]
