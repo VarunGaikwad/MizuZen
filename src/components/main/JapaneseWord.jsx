@@ -8,7 +8,7 @@ export default function JapaneseWord() {
 
   return (
     <div className="text-center">
-      <p className="text-8xl text-indigo-400">{japanese}</p>
+      <p className="text-8xl">{japanese}</p>
       <p>{english}</p>
     </div>
   );

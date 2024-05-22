@@ -35,7 +35,7 @@ export default function App() {
       }`}
       style={{ backgroundImage: `url(${url})` }}
     >
-      <div className="select-none z-10 h-screen p-4 flex flex-col bg-black bg-opacity-30 text-white">
+      <div className="select-none z-10 h-screen p-4 flex flex-col bg-black bg-opacity-50 text-white">
         <HeaderToolbar />
         <MainBody />
         <FooterToolbar credits={credits} />
