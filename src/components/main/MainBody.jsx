@@ -4,6 +4,7 @@ import PercentageClock from "./PercentageClock";
 import BinaryClock from "./BinaryClock";
 import { LuBinary } from "react-icons/lu";
 import { FaPercentage } from "react-icons/fa";
+import JapaneseWord from "./JapaneseWord";
 
 export default function MainBody() {
   const [date, setDate] = useState(new Date()),
@@ -58,8 +59,8 @@ export default function MainBody() {
           )}
         </button>
       </div>
-
       <Greeting date={date} />
+      <JapaneseWord />
     </div>
   );
 }

@@ -9,6 +9,8 @@ export default function FavIcon({ name, url }) {
   // const src = `https://www.google.com/s2/favicons?sz=128&domain=${url}`;
   const src = `https://favvyvision.onrender.com/favicon?url=${url}`;
   // const src = `http://localhost:3000/favicon?url=${url}`;
+  // const src =
+  //   "https://cdn.oaistatic.com/_next/static/media/apple-touch-icon.82af6fe1.png";
   return (
     <a href={url}>
       <div className="w-24 flex flex-col align-middle items-center justify-center text-center gap-2">

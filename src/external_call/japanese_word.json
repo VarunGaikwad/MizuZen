@@ -1,0 +1,502 @@
+[
+    {
+        "japanese": "こんにちは",
+        "romaji": "konnichiwa",
+        "english": "Hello"
+    },
+    {
+        "japanese": "さようなら",
+        "romaji": "sayōnara",
+        "english": "Goodbye"
+    },
+    {
+        "japanese": "はい",
+        "romaji": "hai",
+        "english": "Yes"
+    },
+    {
+        "japanese": "いいえ",
+        "romaji": "iie",
+        "english": "No"
+    },
+    {
+        "japanese": "ありがとう",
+        "romaji": "arigatō",
+        "english": "Thank you"
+    },
+    {
+        "japanese": "すみません",
+        "romaji": "sumimasen",
+        "english": "Excuse me / I'm sorry"
+    },
+    {
+        "japanese": "おはようございます",
+        "romaji": "ohayō gozaimasu",
+        "english": "Good morning"
+    },
+    {
+        "japanese": "こんばんは",
+        "romaji": "konbanwa",
+        "english": "Good evening"
+    },
+    {
+        "japanese": "おやすみなさい",
+        "romaji": "oyasuminasai",
+        "english": "Good night"
+    },
+    {
+        "japanese": "いくら",
+        "romaji": "ikura",
+        "english": "How much?"
+    },
+    {
+        "japanese": "どこ",
+        "romaji": "doko",
+        "english": "Where?"
+    },
+    {
+        "japanese": "何",
+        "romaji": "nani",
+        "english": "What?"
+    },
+    {
+        "japanese": "誰",
+        "romaji": "dare",
+        "english": "Who?"
+    },
+    {
+        "japanese": "いつ",
+        "romaji": "itsu",
+        "english": "When?"
+    },
+    {
+        "japanese": "どうして",
+        "romaji": "dōshite",
+        "english": "Why?"
+    },
+    {
+        "japanese": "どう",
+        "romaji": "dō",
+        "english": "How?"
+    },
+    {
+        "japanese": "どれ",
+        "romaji": "dore",
+        "english": "Which?"
+    },
+    {
+        "japanese": "ここ",
+        "romaji": "koko",
+        "english": "Here"
+    },
+    {
+        "japanese": "そこ",
+        "romaji": "soko",
+        "english": "There"
+    },
+    {
+        "japanese": "あそこ",
+        "romaji": "asoko",
+        "english": "Over there"
+    },
+    {
+        "japanese": "これ",
+        "romaji": "kore",
+        "english": "This"
+    },
+    {
+        "japanese": "それ",
+        "romaji": "sore",
+        "english": "That"
+    },
+    {
+        "japanese": "あれ",
+        "romaji": "are",
+        "english": "That (over there)"
+    },
+    {
+        "japanese": "どこ",
+        "romaji": "doko",
+        "english": "Where?"
+    },
+    {
+        "japanese": "右",
+        "romaji": "migi",
+        "english": "Right"
+    },
+    {
+        "japanese": "左",
+        "romaji": "hidari",
+        "english": "Left"
+    },
+    {
+        "japanese": "前",
+        "romaji": "mae",
+        "english": "Front"
+    },
+    {
+        "japanese": "後ろ",
+        "romaji": "ushiro",
+        "english": "Back"
+    },
+    {
+        "japanese": "上",
+        "romaji": "ue",
+        "english": "Up"
+    },
+    {
+        "japanese": "下",
+        "romaji": "shita",
+        "english": "Down"
+    },
+    {
+        "japanese": "中",
+        "romaji": "naka",
+        "english": "Inside"
+    },
+    {
+        "japanese": "外",
+        "romaji": "soto",
+        "english": "Outside"
+    },
+    {
+        "japanese": "大きい",
+        "romaji": "ōkii",
+        "english": "Big"
+    },
+    {
+        "japanese": "小さい",
+        "romaji": "chīsai",
+        "english": "Small"
+    },
+    {
+        "japanese": "新しい",
+        "romaji": "atarashii",
+        "english": "New"
+    },
+    {
+        "japanese": "古い",
+        "romaji": "furui",
+        "english": "Old"
+    },
+    {
+        "japanese": "良い",
+        "romaji": "yoi",
+        "english": "Good"
+    },
+    {
+        "japanese": "悪い",
+        "romaji": "warui",
+        "english": "Bad"
+    },
+    {
+        "japanese": "高い",
+        "romaji": "takai",
+        "english": "Expensive / High"
+    },
+    {
+        "japanese": "安い",
+        "romaji": "yasui",
+        "english": "Cheap"
+    },
+    {
+        "japanese": "多い",
+        "romaji": "ōi",
+        "english": "Many"
+    },
+    {
+        "japanese": "少ない",
+        "romaji": "sukunai",
+        "english": "Few"
+    },
+    {
+        "japanese": "長い",
+        "romaji": "nagai",
+        "english": "Long"
+    },
+    {
+        "japanese": "短い",
+        "romaji": "mijikai",
+        "english": "Short"
+    },
+    {
+        "japanese": "早い",
+        "romaji": "hayai",
+        "english": "Fast"
+    },
+    {
+        "japanese": "遅い",
+        "romaji": "osoi",
+        "english": "Slow"
+    },
+    {
+        "japanese": "重い",
+        "romaji": "omoi",
+        "english": "Heavy"
+    },
+    {
+        "japanese": "軽い",
+        "romaji": "karui",
+        "english": "Light"
+    },
+    {
+        "japanese": "暑い",
+        "romaji": "atsui",
+        "english": "Hot (weather)"
+    },
+    {
+        "japanese": "寒い",
+        "romaji": "samui",
+        "english": "Cold (weather)"
+    },
+    {
+        "japanese": "熱い",
+        "romaji": "atsui",
+        "english": "Hot (objects)"
+    },
+    {
+        "japanese": "冷たい",
+        "romaji": "tsumetai",
+        "english": "Cold (objects)"
+    },
+    {
+        "japanese": "美味しい",
+        "romaji": "oishii",
+        "english": "Delicious"
+    },
+    {
+        "japanese": "まずい",
+        "romaji": "mazui",
+        "english": "Bad-tasting"
+    },
+    {
+        "japanese": "甘い",
+        "romaji": "amai",
+        "english": "Sweet"
+    },
+    {
+        "japanese": "辛い",
+        "romaji": "karai",
+        "english": "Spicy"
+    },
+    {
+        "japanese": "苦い",
+        "romaji": "nigai",
+        "english": "Bitter"
+    },
+    {
+        "japanese": "塩辛い",
+        "romaji": "shiokarai",
+        "english": "Salty"
+    },
+    {
+        "japanese": "酸っぱい",
+        "romaji": "suppai",
+        "english": "Sour"
+    },
+    {
+        "japanese": "面白い",
+        "romaji": "omoshiroi",
+        "english": "Interesting / Fun"
+    },
+    {
+        "japanese": "つまらない",
+        "romaji": "tsumaranai",
+        "english": "Boring"
+    },
+    {
+        "japanese": "難しい",
+        "romaji": "muzukashii",
+        "english": "Difficult"
+    },
+    {
+        "japanese": "易しい",
+        "romaji": "yasashii",
+        "english": "Easy"
+    },
+    {
+        "japanese": "楽しい",
+        "romaji": "tanoshii",
+        "english": "Enjoyable"
+    },
+    {
+        "japanese": "きれい",
+        "romaji": "kirei",
+        "english": "Beautiful / Clean"
+    },
+    {
+        "japanese": "汚い",
+        "romaji": "kitanai",
+        "english": "Dirty"
+    },
+    {
+        "japanese": "静か",
+        "romaji": "shizuka",
+        "english": "Quiet"
+    },
+    {
+        "japanese": "うるさい",
+        "romaji": "urusai",
+        "english": "Noisy"
+    },
+    {
+        "japanese": "友達",
+        "romaji": "tomodachi",
+        "english": "Friend"
+    },
+    {
+        "japanese": "家族",
+        "romaji": "kazoku",
+        "english": "Family"
+    },
+    {
+        "japanese": "先生",
+        "romaji": "sensei",
+        "english": "Teacher"
+    },
+    {
+        "japanese": "学生",
+        "romaji": "gakusei",
+        "english": "Student"
+    },
+    {
+        "japanese": "学校",
+        "romaji": "gakkō",
+        "english": "School"
+    },
+    {
+        "japanese": "仕事",
+        "romaji": "shigoto",
+        "english": "Work"
+    },
+    {
+        "japanese": "会社",
+        "romaji": "kaisha",
+        "english": "Company"
+    },
+    {
+        "japanese": "店",
+        "romaji": "mise",
+        "english": "Shop / Store"
+    },
+    {
+        "japanese": "駅",
+        "romaji": "eki",
+        "english": "Station"
+    },
+    {
+        "japanese": "銀行",
+        "romaji": "ginkō",
+        "english": "Bank"
+    },
+    {
+        "japanese": "病院",
+        "romaji": "byōin",
+        "english": "Hospital"
+    },
+    {
+        "japanese": "薬",
+        "romaji": "kusuri",
+        "english": "Medicine"
+    },
+    {
+        "japanese": "水",
+        "romaji": "mizu",
+        "english": "Water"
+    },
+    {
+        "japanese": "お茶",
+        "romaji": "ocha",
+        "english": "Tea"
+    },
+    {
+        "japanese": "ご飯",
+        "romaji": "gohan",
+        "english": "Rice / Meal"
+    },
+    {
+        "japanese": "パン",
+        "romaji": "pan",
+        "english": "Bread"
+    },
+    {
+        "japanese": "肉",
+        "romaji": "niku",
+        "english": "Meat"
+    },
+    {
+        "japanese": "魚",
+        "romaji": "sakana",
+        "english": "Fish"
+    },
+    {
+        "japanese": "野菜",
+        "romaji": "yasai",
+        "english": "Vegetables"
+    },
+    {
+        "japanese": "果物",
+        "romaji": "kudamono",
+        "english": "Fruits"
+    },
+    {
+        "japanese": "犬",
+        "romaji": "inu",
+        "english": "Dog"
+    },
+    {
+        "japanese": "猫",
+        "romaji": "neko",
+        "english": "Cat"
+    },
+    {
+        "japanese": "車",
+        "romaji": "kuruma",
+        "english": "Car"
+    },
+    {
+        "japanese": "自転車",
+        "romaji": "jitensha",
+        "english": "Bicycle"
+    },
+    {
+        "japanese": "電車",
+        "romaji": "densha",
+        "english": "Train"
+    },
+    {
+        "japanese": "飛行機",
+        "romaji": "hikōki",
+        "english": "Airplane"
+    },
+    {
+        "japanese": "船",
+        "romaji": "fune",
+        "english": "Ship"
+    },
+    {
+        "japanese": "切符",
+        "romaji": "kippu",
+        "english": "Ticket"
+    },
+    {
+        "japanese": "休み",
+        "romaji": "yasumi",
+        "english": "Holiday / Break"
+    },
+    {
+        "japanese": "誕生日",
+        "romaji": "tanjōbi",
+        "english": "Birthday"
+    },
+    {
+        "japanese": "時間",
+        "romaji": "jikan",
+        "english": "Time"
+    },
+    {
+        "japanese": "今",
+        "romaji": "ima",
+        "english": "Now"
+    }
+]
