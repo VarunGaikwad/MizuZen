@@ -6,7 +6,7 @@ PercentageClock.propTypes = {
 };
 
 export default function PercentageClock({ className, date }) {
-  const arugments = [10, 30, 19, 30],
+  const arugments = [9, 30, 18, 30],
     progress = calculatePercentage(arugments, date);
 
   return (

@@ -6,15 +6,15 @@ FavIcon.propTypes = {
 };
 
 export default function FavIcon({ name, url }) {
-  // const src = `https://www.google.com/s2/favicons?sz=128&domain=${url}`;
-  const src = `https://favvyvision.onrender.com/favicon?url=${url}`;
-  // const src = `http://localhost:3000/favicon?url=${url}`;
-  // const src =
-  //   "https://cdn.oaistatic.com/_next/static/media/apple-touch-icon.82af6fe1.png";
+  const src = `https://favvyvision.onrender.com/favicon?url=${url}`,
+    onerror = (event) => {
+      const my_url = "https://cdn-icons-png.flaticon.com/512/2748/2748583.png";
+      event.target.src = my_url;
+    };
   return (
     <a href={url}>
       <div className="w-24 flex flex-col align-middle items-center justify-center text-center gap-2">
-        <img width={32} height={32} src={src} alt={name} />
+        <img className="size-8" src={src} alt={name} onError={onerror} />
         <p className="text-xs">{name}</p>
       </div>
     </a>

@@ -4,10 +4,12 @@ import ImportantLinks from "./ImportantLinks";
 export default function HeaderToolbar() {
   return (
     <div>
-      <div className="flex justify-center w-full">
-        <DuckDuckGoSearchBar />
-      </div>
       <ImportantLinks />
+      <div className="flex justify-evenly w-full">
+        <div></div>
+        <DuckDuckGoSearchBar />
+        <div></div>
+      </div>
     </div>
   );
 }

@@ -8,7 +8,8 @@ import JapaneseWord from "./JapaneseWord";
 
 export default function MainBody() {
   const [date, setDate] = useState(new Date()),
-    [activeClock, setActiveClock] = useState("Percentage"),
+    clockType = localStorage.getItem("clockType"),
+    [activeClock, setActiveClock] = useState(clockType || "Percentage"),
     size = 25 * 1.5;
 
   useEffect(() => {
@@ -19,10 +20,10 @@ export default function MainBody() {
   }, []);
 
   return (
-    <div className="flex-1 flex flex-col gap-4 justify-center items-center">
+    <div className="mt-20 flex-1 flex flex-col justify-center items-center">
       <div className="flex items-center gap-10">
         <div></div>
-        <div className="flex-1 flex flex-col items-center">
+        <div className="flex flex-col items-center">
           <div
             className={`absolute z-10 transition-opacity duration-1000 ${
               activeClock === "Percentage"
@@ -46,8 +47,10 @@ export default function MainBody() {
           onClick={() =>
             setActiveClock((prev) => {
               if (prev === "Percentage") {
+                localStorage.setItem("clockType", "Binary");
                 return "Binary";
               }
+              localStorage.setItem("clockType", "Percentage");
               return "Percentage";
             })
           }
