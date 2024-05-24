@@ -14,8 +14,8 @@ export default function JapaneseWord() {
 
   let index = Number(localStorage.getItem("wordIndex") || new Date().getDate());
 
-  if (index > 31 || index > 30) {
-    index = new Date().getDate();
+  if (index > 100) {
+    index = 0;
   }
 
   if (timestamp !== today_date) {

@@ -7,12 +7,10 @@ import axios from "axios";
 
 export default function App() {
   const [{ urls, credits }, setUnsplashBackground] = useState(
-    getRandomUnsplashBackground()
-  );
-
-  const [url, setUrl] = useState(urls.thumb);
-
-  const transitions = ["ease-in-out", "ease-out", "ease-in", "ease-linear"];
+      getRandomUnsplashBackground()
+    ),
+    [url, setUrl] = useState(urls.thumb),
+    transitions = ["ease-in-out", "ease-out", "ease-in", "ease-linear"];
 
   useEffect(() => {
     const interval = setInterval(() => {
