@@ -12,7 +12,11 @@ export default function JapaneseWord() {
       setRomajiVisible(false);
     };
 
-  let index = localStorage.getItem("wordIndex") || new Date().getDate();
+  let index = Number(localStorage.getItem("wordIndex") || new Date().getDate());
+
+  if (index > 31 || index > 30) {
+    index = new Date().getDate();
+  }
 
   if (timestamp !== today_date) {
     localStorage.setItem("timestamp", today_date);

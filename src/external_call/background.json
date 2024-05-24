@@ -344,7 +344,7 @@
             "id": "78A265wPiO4",
             "location": {
                 "country": "Romania",
-                "city": null
+                "city": "Imaginary"
             },
             "user": {
                 "name": "David Marcu"
@@ -363,7 +363,7 @@
                 "city": "World"
             },
             "user": {
-                "name": "louis magnotti"
+                "name": "Louis Magnotti"
             }
         }
     }
