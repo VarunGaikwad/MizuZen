@@ -21,7 +21,7 @@ export default function App() {
     return () => {
       clearInterval(interval);
     };
-  }, []);
+  }, [backgrounImage]);
 
   useEffect(() => {
     axios.get(urls.raw).then(() => setUrl(urls.raw));
