@@ -34,7 +34,7 @@
    - Click on the "Load unpacked" button and select the folder containing the Mizuzen extension files.
 
 4. **Set Up Your Favorite Websites**:
-   - Edit the `favorites.json` file in the extension folder to include your favorite websites and their icons.
+   - Edit the `links.json` file in the extension folder to include your favorite websites and their icons.
 
 ### Using Mizuzen
 
@@ -56,7 +56,7 @@
 Mizuzen is highly customizable to suit your personal preferences. Here are some of the customization options:
 
 1. **Favorite Websites**:
-   - Modify the `favorites.json` file to add, remove, or change the websites and icons.
+   - Modify the `links.json` file to add, remove, or change the websites and icons.
 
    ```json
    [
