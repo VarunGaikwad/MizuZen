@@ -13,7 +13,11 @@ export class BackgroundImage {
   }
 
   getRandomUnsplashBackground() {
-    const number = this.random++;
+    let number = this.random++;
+    if (number > this.max) {
+      number = 0;
+      this.random = 0;
+    }
     localStorage.setItem("imageIndex", number);
     return background.at(number);
   }

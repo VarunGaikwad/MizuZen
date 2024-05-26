@@ -16,7 +16,7 @@ export default function App() {
   useEffect(() => {
     const interval = setInterval(() => {
       setUnsplashBackground(backgrounImage.getRandomUnsplashBackground());
-    }, 60000 / 4);
+    }, 60000);
 
     return () => {
       clearInterval(interval);
