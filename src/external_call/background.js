@@ -1,18 +1,20 @@
 import background from "./background.json";
 
-let max = background.length - 1,
-  random = Number(new Date().getTime()) % max;
-
-const getRandomUnsplashBackground = () => {
-  return background.at(getNextIndex());
-};
-
-const getNextIndex = () => {
-  random++;
-  if (random > max) {
-    random = 0;
+export class BackgroundImage {
+  constructor() {
+    this.timestamp =
+      localStorage.getItem("timestamp") ||
+      new Date().toISOString().split("T")[0];
+    this.max = background.length - 1;
+    this.random =
+      Number(
+        localStorage.getItem("imageIndex") || this.timestamp.replace(/-/g, "")
+      ) % this.max;
   }
-  return random;
-};
 
-export default getRandomUnsplashBackground;
+  getRandomUnsplashBackground() {
+    const number = this.random++;
+    localStorage.setItem("imageIndex", number);
+    return background.at(number);
+  }
+}

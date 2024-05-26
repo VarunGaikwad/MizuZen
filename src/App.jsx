@@ -2,20 +2,21 @@ import { useEffect, useState } from "react";
 import FooterToolbar from "./components/footer/FooterToolbar";
 import HeaderToolbar from "./components/header/HeaderToolbar";
 import MainBody from "./components/main/MainBody";
-import getRandomUnsplashBackground from "./external_call/background";
+import { BackgroundImage } from "./external_call/background";
 import axios from "axios";
 
 export default function App() {
-  const [{ urls, credits }, setUnsplashBackground] = useState(
-      getRandomUnsplashBackground()
+  const backgrounImage = new BackgroundImage(),
+    [{ urls, credits }, setUnsplashBackground] = useState(
+      backgrounImage.getRandomUnsplashBackground()
     ),
     [url, setUrl] = useState(urls.thumb),
     transitions = ["ease-in-out", "ease-out", "ease-in", "ease-linear"];
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setUnsplashBackground(getRandomUnsplashBackground());
-    }, 60000);
+      setUnsplashBackground(backgrounImage.getRandomUnsplashBackground());
+    }, 60000 / 4);
 
     return () => {
       clearInterval(interval);
