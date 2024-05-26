@@ -62,13 +62,11 @@ Mizuzen is highly customizable to suit your personal preferences. Here are some 
    [
        {
            "name": "Google",
-           "url": "https://www.google.com",
-           "icon": "path/to/google-icon.png"
+           "url": "https://www.google.com"
        },
        {
            "name": "GitHub",
-           "url": "https://www.github.com",
-           "icon": "path/to/github-icon.png"
+           "url": "https://www.github.com"
        }
    ]
    ```
